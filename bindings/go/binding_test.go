@@ -3,12 +3,12 @@ package tree_sitter_solidity_test
 import (
 	"testing"
 
+	solidity "github.com/Artifex1/tree-sitter-solidity/bindings/go"
 	tree_sitter "github.com/smacker/go-tree-sitter"
-	"github.com/tree-sitter/tree-sitter-solidity"
 )
 
 func TestCanLoadGrammar(t *testing.T) {
-	language := tree_sitter.NewLanguage(tree_sitter_solidity.Language())
+	language := tree_sitter.NewLanguage(solidity.Language())
 	if language == nil {
 		t.Errorf("Error loading Solidity grammar")
 	}

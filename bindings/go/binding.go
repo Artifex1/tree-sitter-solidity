@@ -1,8 +1,7 @@
 package tree_sitter_solidity
 
-// #cgo CFLAGS: -std=c11 -fPIC -I./src
+// #cgo CFLAGS: -std=c11 -fPIC -I./src -I./src/tree_sitter
 // #include "parser.c"
-// // NOTE: if your language has an external scanner, add it here.
 import "C"
 
 import "unsafe"
